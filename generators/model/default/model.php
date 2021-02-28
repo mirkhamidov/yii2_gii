@@ -51,7 +51,7 @@ class <?= $className ?> extends <?= '\\' . ltrim($generator->baseNs, '\\') . "\\
     {
         return [
             [
-                'class' => TimestampBehavior::className(),
+                'class' => TimestampBehavior::class ,
                 'value' => new Expression('NOW()'),
 <?php if (!$_createdAt) : ?>
                 'createdAtAttribute' => false,
